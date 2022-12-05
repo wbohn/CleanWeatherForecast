@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "DogEar", Version = "v1" });
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanWeatherForecast", Version = "v1" });
     options.CustomSchemaIds(type => type.Name.EndsWith("Dto") ? type.Name.Replace("Dto", string.Empty) : type.Name);
 });
 
